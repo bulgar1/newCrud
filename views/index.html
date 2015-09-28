@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Bar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+<body>
+	<a ui-sref="Home">Home</a>
+	<a ui-sref="Profile">Profile</a>
+	<a ui-sref="Botle">Add Botle</a>
+	<a ui-sref="Register">Register</a>
+	<a ui-sref="Login">Login</a>
+	<ui-view></ui-view>
+	<!-- Ext Libs -->
+	<script src="angular/angular.min.js"></script>
+	<script src="angular-ui-router/release/angular-ui-router.min.js"></script>
+	<!-- // <script src="angular-bootstrap/ui-bootstrap.min.js"></script>
+	// <script src="angular-bootstrap/ui-bootstrap-tpls.min.js"></script> -->
+	<!-- Global Src -->
+	<script src="/javascript/app.js"></script>
+	<!-- Factories -->
+	<script src="/javascript/services/HomeFactory.js"></script>
+	<script src="/javascript/services/userFactory.js"></script>
+	<script src="/javascript/services/addBotleFactory.js"></script>
+	<script src="/javascript/services/profileFactory.js"></script>
+	<!-- Controllers -->
+	<script src="/javascript/controllers/HomeController.js"></script>
+	<script src="/javascript/controllers/addBotleController.js"></script>
+	<script src="/javascript/controllers/registerController.js"></script>
+	<script src="/javascript/controllers/commentController.js"></script>
+	<script src="/javascript/controllers/profileController.js"></script>
+	<script src="/javascript/controllers/navBarController.js"></script>
+	<script src="/javascript/controllers/editBotleController.js"></script>
+
+</body>
+</html>

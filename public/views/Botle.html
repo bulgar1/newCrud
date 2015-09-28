@@ -1,0 +1,29 @@
+<div ng-controller=" addBotleController as vm" class="registerImage">
+
+	<div class="header">
+		<h1 align="center">Add New Botle</h1>
+	</div>
+	<div class="">
+
+		<form ng-submit="vm.addBotle()">
+
+			<div class="form-group userinput">
+				<label>Brand</label>
+				<input class="text" ng-model="vm.botle.brand"/>
+			</div>
+
+			<div class="form-group userinput">
+				<label>img</label>
+				<input class="img" ng-model="vm.botle.img" />
+			</div>
+
+			<div class="form-group userinput">
+				<label>Description</label>
+				<input class="form-control" ng-model="vm.botle.desc"/>
+			</div>
+
+			<button id="registersubmitbtn" type="submit">Submit</button>
+		</form>
+	</div>
+
+</div>

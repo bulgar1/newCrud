@@ -1,0 +1,27 @@
+<div ng-controller="registerController as vm" class="registerImage">
+
+	<div class="header">
+		<h1 align="center">New Account</h1>
+	</div>
+	<div class="registerForm">
+		<form ng-submit="vm.register()">
+			<div class="form-group userinput">
+				<label>Username</label>
+				<input class="form-control" placeholder="Username..." ng-model="vm.user.username" required />
+			</div>
+			<div class="form-group userinput">
+				<label>Email</label>
+				<input class="form-control" placeholder="Email..." ng-model="vm.user.email" type="email" required />
+			</div>
+			<div class="form-group userinput">
+				<label>Password</label>
+				<input class="form-control" type="password" placeholder="Password..." ng-model="vm.user.password" required />
+			</div>
+			<div class="form-group userinput">
+				<label>Confirm Password</label>
+				<input class="form-control" type="password" placeholder="Confirm Password..." ng-model="vm.user.cpassword" required />
+			</div>
+			<button id="registersubmitbtn" type="submit" class="btn btn-info" ng-disabled="!vm.user.username || !vm.user.email || !vm.user.password || !vm.user.cpassword || !(vm.user.password === vm.user.cpassword)">Submit</button>
+		</form>
+	</div>
+</div>
